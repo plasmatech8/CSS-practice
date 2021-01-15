@@ -1,0 +1,83 @@
+<!--
+ATTEMPT 1:
+
+<div id="base">
+    <div id="stuff"></div>
+  </div>
+
+  <style>
+    body {
+      background: #191919;
+    }
+    div {
+      border-radius: 50%;
+      background: red;
+      position: absolute;
+    }
+    #base {
+      left: 125;
+      top: 50;
+      width: 150;
+      height: 200;
+      background: #F2AD43;
+      border-radius: 75px 75px 20px 20px;
+      overflow: hidden;
+    }
+    #stuff {
+      background: #824B20;
+      left: 50;
+      top: 100;
+      width: 200;
+      height: 200;
+      box-shadow: -150px 0 0 0 #E08027,  -75px -80px 0 -70px #FFF58F;
+    }
+    #b {
+      background: #E08027;
+      left: 45;
+      top: 90;
+      width: 60;
+      height: 60;
+    }
+  </style>
+
+ATTEMPT 2:
+
+<a style="  position:absolute;
+            left:125;
+            top:50;
+            width:150;
+            height:200;
+            background:#F2AD43;
+            border-radius:75px+75px+20px+20px;
+            overflow:hidden;
+            box-shadow:0+0+0+2in#191919;
+            ">
+  <p style="   border-radius:50%;
+                position:absolute;
+              	background:#824B20;
+                left:50;
+                top:84;
+                width:200;
+                height:200;
+                box-shadow:-150px 0 0 0#E08027,-75px -80px 0 -70px #FFF58F;
+              "></p>
+</a>
+
+-->
+
+<a style=position:absolute;left:125;top:50;width:150;height:200;background:#F2AD43;border-radius:75px+75px+20px+20px;overflow:hidden;box-shadow:0+0+0+2in#191919>
+    <p style="border-radius:50%;position:absolute;background:#824B20;left:50;top:84;width:200;height:200;box-shadow:-150px 0 0 0#E08027,-75px -80px 0 -70px #FFF58F"></p></a>
+
+<!--
+
+Interesting:
+
+<body text=824B2
+      style="   margin:-1.67.42;
+                zoom:30;
+                text-shadow:-.7EX+0#E08027,4.5q -7q#aaa,-3q -5q#111;
+                clip-path:inset(18%30%45.6%round 5q 5q 9%9%"
+      bgcolor=red>.●
+
+We can use body tag + characters + zoom + text shadow to create our desired shapes.
+-->
