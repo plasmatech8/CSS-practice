@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/bootstrap.min.js" defer></script>
+
+  <style>
+
+  </style>
+
+  <title>Images</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Responsive images</h1>
+
+    <p>Img fluid</p>
+    <div style="width: 40%; border: 5px red solid">
+      <img
+        class="img-fluid"
+        src="https://mdbootstrap.com/img/Marketing/mdb-press-pack/mdb-dark.jpg"
+      />
+    </div>
+
+    <h2>Img floats</h2>
+    <img
+      class="rounded float-end"
+      src="https://mdbootstrap.com/img/Marketing/mdb-press-pack/mdb-dark.jpg"
+    />
+    <div class="clearfix my-5"></div>
+
+    <p>This text is below the floating image (not alongside)</p>
+
+
+    <img
+      class="rounded d-block mx-auto"
+      src="https://mdbootstrap.com/img/Marketing/mdb-press-pack/mdb-dark.jpg"
+    />
+
+    <div class="clearfix my-4"></div>
+
+
+    <h2>A clearfix example</h2>
+
+    <div class="clearfix my-4">
+      <img
+      class="rounded float-end"
+      style="width: 45%"
+      src="https://mdbootstrap.com/img/Marketing/mdb-press-pack/mdb-dark.jpg"
+    />
+    <img
+      class="rounded float-start"
+      style="width: 45%"
+      src="https://mdbootstrap.com/img/Marketing/mdb-press-pack/mdb-dark.jpg"
+    />
+    </div>
+    <p>This text is below the floating image (not alongside/inbetween the two images)</p>
+
+
+</body>
+</html>
